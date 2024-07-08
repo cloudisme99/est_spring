@@ -1,18 +1,15 @@
 package com.example.basic.spring_2407011.practice4;
 
-import java.util.HashMap;
-import java.util.Map;
-
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class UserRepository {
+public interface UserRepository extends JpaRepository<User, Long> {
 
-	Map<String, User> users = new HashMap<>();
+	@Query("select u from User u where u.email = ?1 and u.age = ?2")
+	User findByEmailAndAge(String email, int age);
 
-
-	public User getUser(String key) {
-		users.put("max", new User("max@gmail.com", "Max", 20));
-		return users.get("max");
-	}
+	@Query("select (count(u) > 0) from User u where u.email = ?1")
+	boolean existsByEmail(String email);
 }
