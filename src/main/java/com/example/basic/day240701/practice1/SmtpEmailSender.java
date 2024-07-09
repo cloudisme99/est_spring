@@ -1,4 +1,4 @@
-package com.example.basic.spring_2407011.practice1;
+package com.example.basic.day240701.practice1;
 
 public class SmtpEmailSender implements EmailSender {
 

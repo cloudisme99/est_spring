@@ -1,4 +1,4 @@
-package com.example.basic.spring_2407011.practice3_quiz;
+package com.example.basic.day240701.practice3_quiz;
 
 public class Main {
 	public static void main(String[] args) {

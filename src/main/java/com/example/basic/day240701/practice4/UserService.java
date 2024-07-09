@@ -1,4 +1,4 @@
-package com.example.basic.spring_2407011.practice4;
+package com.example.basic.day240701.practice4;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,8 +14,9 @@ public class UserService {
 	}
 
 	public String getUser(String key){
-		User user = userRepository.getUser(key);
+		//User user = userRepository.getUser(key);
 		System.out.println("오오오오오징어");
-		return user.getName();
+		//return user.getName();
+		return null;
 	}
 }

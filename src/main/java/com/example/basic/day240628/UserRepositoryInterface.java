@@ -1,4 +1,4 @@
-package com.example.basic;
+package com.example.basic.day240628;
 
 public interface UserRepositoryInterface {
 

@@ -1,4 +1,4 @@
-package com.example.basic.spring_2407011.practice4;
+package com.example.basic.day240701.practice4;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

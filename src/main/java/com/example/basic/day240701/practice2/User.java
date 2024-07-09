@@ -1,4 +1,4 @@
-package com.example.basic.spring_2407011.practice2;
+package com.example.basic.day240701.practice2;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
